@@ -1,9 +1,31 @@
-html {
-    box-sizing: border-box;
+@import 'vars';
+@import 'global';
+.top__line {
+    background: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+.top__phone {
+    a {
+        color: #ccc;
+        font-size: 14px;
+    }
+}
+
+.top__contacts {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    li {
+        display: inline-block;
+        &+li {
+            margin-left: 30px;
+        }
+    }
+    a {
+        color: #ccc;
+    }
 }
